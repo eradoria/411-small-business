@@ -3,8 +3,9 @@ import { Routes, Route } from 'react-router'
 import { Navigate } from 'react-router'
 import cookie from 'cookie'
 import Login from './components/Login'
-import Add from "./components/Add"
+import Add from "./containers/Add"
 import Listings from "./containers/Listings"
+import BizDetails from './containers/BizDetails'
 
 // Write checkAuth function here
 // Check the cookies for a cookie called "loggedIn"
@@ -29,7 +30,7 @@ const Router = () => {
             <Route path="/login" element={<Login/>} />
             {/* <Route path="/Listings" element={<ProtectedRoute component={Listings}/>} /> */}
             <Route path="/Add" element={<ProtectedRoute component={Add}/>} />
-            <Route path="/Listings/:id" component={Add} />
+            <Route path="/Listings/:id" element={<BizDetails/>} />
         </Routes>
     );
 };

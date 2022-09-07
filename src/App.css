@@ -3,9 +3,8 @@
   flex-direction: column;
   margin: 50px auto;
   width: 50%;
-  gap: 15px
+  gap: 15px;
 }
-
 
 .card-container {
   display: flex;
@@ -61,4 +60,41 @@ ul {
 
 .nav-list-item {
   margin: auto 20px;
+}
+
+.add-container {
+  padding-top: 80px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.form {
+  border: solid red 2px;
+  height: 500px;
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button{
+  color: white;
+  background-color:royalblue;
+  height: 40px;
+  width: 260px;
+}
+
+.add-map{
+  border: solid green 2px ;
+  height: 200px;
+  width: 600px;
+}
+
+.biz-container{
+  display: flex;
+  border: solid red 1px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  font-family:'Times New Roman', Times, serif;
 }

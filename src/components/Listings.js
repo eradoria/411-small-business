@@ -7,10 +7,15 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
+import {Link, useParams } from "react-router-dom"
 import DeleteIcon from "@mui/icons-material/Delete";
 
 const Listings = (props) => {
-    console.log(props)
+    console.log("props being called here",props)
+
+    let id = useParams();
+	console.log("id being pulled",id);
+
   return (
     <Container maxWidth="lg" className="car-container">
       <h4>Welcome, {props.user.username}</h4>
@@ -29,10 +34,11 @@ const Listings = (props) => {
         <TableBody>
           {props.listings.map((store, idx) => (
             <TableRow key={store.id}>
-              <TableCell component="th" scope="row">
+              {/* <TableCell component="th" scope="row">
                 {store.id}
-              </TableCell>
-              <TableCell>{store.business}</TableCell>
+              </TableCell> */}
+              <TableCell > <Link to={`/Listings/${store.id}`}>{store.business}</Link></TableCell>
+             
               <TableCell>{store["description"]}</TableCell>
               <TableCell>{store["address"]}</TableCell>
               <TableCell>{store["open"]}</TableCell>

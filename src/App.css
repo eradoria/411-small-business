@@ -93,6 +93,8 @@ ul {
 .biz-container{
   display: flex;
   border: solid red 1px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 60px;

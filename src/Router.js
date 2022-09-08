@@ -1,6 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router'
-import { Navigate } from 'react-router'
+import { Routes, Route, Navigate, Outlet } from 'react-router';
 import cookie from 'cookie'
 import Login from './components/Login'
 import Add from "./containers/Add"
@@ -9,7 +8,7 @@ import BizDetails from './containers/BizDetails'
 
 // Write checkAuth function here
 // Check the cookies for a cookie called "loggedIn"
-const checkAuth = () => {
+export const checkAuth = () => {
     const cookies = cookie.parse(document.cookie);
     return cookies["loggedIn"] ? true : false;
   };
@@ -26,9 +25,11 @@ const ProtectedRoute = (props) => {
 const Router = () => {
     return (
         <Routes>
-            <Route exact path="/"  element={<ProtectedRoute component={Listings}/>} />
+            {/* <Route element={<ProtectedRoute />}>
+				<Route path="/Add" element={<Add />}></Route>
+			</Route> */}
+            <Route exact path="/"  element={<Listings/>} />
             <Route path="/login" element={<Login/>} />
-            {/* <Route path="/Listings" element={<ProtectedRoute component={Listings}/>} /> */}
             <Route path="/Add" element={<ProtectedRoute component={Add}/>} />
             <Route path="/Listings/:id" element={<BizDetails/>} />
         </Routes>

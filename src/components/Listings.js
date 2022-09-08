@@ -9,6 +9,13 @@ import {
 } from "@mui/material";
 import {Link, useParams } from "react-router-dom"
 import DeleteIcon from "@mui/icons-material/Delete";
+import { checkAuth } from "../Router";
+import cookie  from "cookie";
+
+
+// const ifCheckAuth = () =>{
+//   return checkAuth() === true ? <Component /> : <Navigate to="/login" />
+// }
 
 const Listings = (props) => {
     console.log("props being called here",props)
@@ -42,6 +49,7 @@ const Listings = (props) => {
               <TableCell>{store["description"]}</TableCell>
               <TableCell>{store["address"]}</TableCell>
               <TableCell>{store["open"]}</TableCell>
+              {checkAuth() ? (
               <TableCell>
                 <DeleteIcon
                   // add onClick method here
@@ -49,6 +57,7 @@ const Listings = (props) => {
                   className="icon text-red"
                 />
               </TableCell>
+              ) : null}
             </TableRow>
           ))}
         </TableBody>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router'
+import Map from './Map';
 
 const BizDetails = (props) => {
     console.log('props being called',props.listings);
@@ -15,6 +16,8 @@ const BizDetails = (props) => {
 				<h4>{biz.open}</h4>
 				<h3>{biz.description}</h3>
 			</div>
+
+            <Map />
         </div>
     )
 }

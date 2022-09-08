@@ -1,6 +1,5 @@
 import { connect } from 'react-redux'
 import Add from '../components/Add'
-// import { removeCar } action here
 import { addListing } from '../redux/actions'
 
 const mapStateToProps = (state) => {

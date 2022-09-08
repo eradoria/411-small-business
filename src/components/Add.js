@@ -2,8 +2,11 @@ import React from "react";
 import InputUnstyled from "@mui/base/InputUnstyled";
 import { styled } from "@mui/system";
 import GoogleMapReact from "google-map-react";
+import Map from "./Map";
 
 const Add = (props) => {
+console.log("props being called here",props)
+
   const blue = {
     100: "#DAECFF",
     200: "#80BFFF",
@@ -71,15 +74,7 @@ const Add = (props) => {
     props.addListing();
   };
 
-  const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627,
-    },
-    zoom: 11,
-  };
 
   return (
     <>
@@ -98,19 +93,7 @@ const Add = (props) => {
         </div>
 
         <div className="add-map">
-          <div style={{ height: "600px", width: "600px" }}>
-            <GoogleMapReact
-              bootstrapURLKeys={{ key: "" }}
-              defaultCenter={defaultProps.center}
-              defaultZoom={defaultProps.zoom}
-            >
-              <AnyReactComponent
-                lat={59.955413}
-                lng={30.337844}
-                text="My Marker"
-              />
-            </GoogleMapReact>
-          </div>
+          < Map />
         </div>
       </div>
     </>

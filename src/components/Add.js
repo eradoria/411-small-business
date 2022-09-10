@@ -66,14 +66,14 @@ const Add = (props) => {
           <input
             type="text"
             name="address"
-            placeholder="address"
+            placeholder="Address"
             onChange={handleChange}
           />
 
           <input
             type="text"
             name="open"
-            placeholder="operation hrs"
+            placeholder="Operating hrs"
             onChange={handleChange}
           />
 

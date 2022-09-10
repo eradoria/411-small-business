@@ -62,19 +62,14 @@ ul {
   margin: auto 20px;
 }
 
+
+/* /////////////////////////////////////////////// */
 .add-container {
   padding-top: 80px;
   padding-left: 50px;
   display: flex;
   flex-direction: row;
-}
-
-.form {
-  border: solid red 2px;
-  height: 500px;
-  width: 700px;
-  justify-content: center;
-  align-items: center;
+  gap: 50px;
 }
 
 .add-button{
@@ -85,11 +80,40 @@ ul {
 }
 
 .add-map{
-  border: solid green 2px ;
   height: 200px;
   width: 600px;
 }
 
+
+.form{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:'Open Sans',sans-serif;
+}
+
+.form input{
+  height: 50px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  align-self: stretch;
+
+  font-family: sans-serif;
+  color: black;
+  background-color: transparent;
+
+  border-style: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+}
+
+input:focus{
+  outline: none;
+}
+
+/* ////////////////////////////////////// */
 .biz-container{
   display: flex;
   border: solid red 1px;
@@ -98,15 +122,5 @@ ul {
   justify-content: center;
   align-items: center;
   padding-top: 60px;
-  font-family:'Times New Roman', Times, serif;
-}
-
-.form{
-  display: flex;
-  border: solid red 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family:'Times New Roman', Times, serif;
 }

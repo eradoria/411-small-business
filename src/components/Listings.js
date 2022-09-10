@@ -25,7 +25,7 @@ const Listings = (props) => {
 
   return (
     <Container maxWidth="lg" className="car-container">
-      <h4>Welcome, {props.user.username}</h4>
+      <h4>Logged in as {props.user.username}</h4>
       <div className="flex-container">
         {/* <AddCar carTotal={props.cars.length} /> */}
       </div>

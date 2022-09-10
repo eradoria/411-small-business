@@ -15,4 +15,16 @@ const listings = (state = [], action) => {
   }
 };
 
+// const formReducer = (state = null, action) => {
+//   switch (action.type) {
+//     case "Handle_Input_Text":
+//       return {
+//         ...state,
+//         [action.field]: action.payload,
+//       };
+//     default:
+//       return state;
+//   }
+// };
+
 export default combineReducers({ user, listings });

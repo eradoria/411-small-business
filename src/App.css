@@ -100,3 +100,13 @@ ul {
   padding-top: 60px;
   font-family:'Times New Roman', Times, serif;
 }
+
+.form{
+  display: flex;
+  border: solid red 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:'Times New Roman', Times, serif;
+}

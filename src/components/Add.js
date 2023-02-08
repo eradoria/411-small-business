@@ -6,10 +6,8 @@ import state from "../redux/state";
 import { ContactPageSharp } from "@mui/icons-material";
 
 const intialFormState = {
-  business: "",
-  description: "",
-  address: "",
-  open: "",
+  Player: "",
+  Rank: "",
 };
 
 const formReducer = (state, action) => {
@@ -51,39 +49,21 @@ const Add = (props) => {
         <div className="form">
           <input
             type="text"
-            name="business"
+            name="Player"
             placeholder="Name"
             onChange={handleChange}
           />
 
           <input
             type="text"
-            name="description"
-            placeholder="Description"
-            onChange={handleChange}
-          />
-
-          <input
-            type="text"
-            name="address"
-            placeholder="Address"
-            onChange={handleChange}
-          />
-
-          <input
-            type="text"
-            name="open"
-            placeholder="Operating hrs"
+            name="Rank"
+            placeholder="Rank"
             onChange={handleChange}
           />
 
           <button className="add-button" onClick={handleListing}>
             Save
           </button>
-        </div>
-
-        <div className="add-map">
-          <Map />
         </div>
       </div>
     </>

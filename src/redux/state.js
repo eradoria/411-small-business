@@ -4,41 +4,16 @@ const state = {
     email: "test-user@example.com",
   },
   listings: [
-   {
-      "id": 1,
-      "business": "Cogidoo",
-      "description": "Robust",
-      "address": "18 Oak Valley Lane Houston, TX 77080",
-      "open": "8-9:04 PM"
+    {
+      id: 1,
+      "Player": "Ari",
+      "Rank": "1",
     },
     {
-      "id": 2,
-      "business": "Fanoodle",
-      "description": "background",
-      "address": "191 Glendale Court Corpus Christi, TX 78412",
-      "open": "7-9:50 PM"
+      id: 2,
+      "Player": "Dabion",
+      "Rank": "2",
     },
-    {
-      "id": 3,
-      "business": "Rhyzio",
-      "description": "encryption",
-      "address": "695 Sunbeam Drive Midland, TX 79705",
-      "open": "7-12:01 PM"
-    },
-    {
-      "id": 4,
-      "business": "Jamia",
-      "description": "holistic",
-      "address": "535 Academy Dr. Fort Worth, TX 76116",
-      "open": "8-8:40 PM"
-    },
-    {
-      "id": 5,
-      "business": "Kwinu",
-      "description": "Centralized",
-      "address": "9342 Lakeview Rd. Richardson, TX 75080",
-      "open": "10-9:22 AM"
-    }
   ],
 };
 

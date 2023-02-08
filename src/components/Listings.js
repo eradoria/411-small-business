@@ -32,10 +32,8 @@ const Listings = (props) => {
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Business</TableCell>
-            <TableCell>Description</TableCell>
-            <TableCell>Address</TableCell>
-            <TableCell>Operating Hours</TableCell>
+            <TableCell>Player</TableCell>
+            <TableCell>Rank</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -44,11 +42,8 @@ const Listings = (props) => {
               {/* <TableCell component="th" scope="row">
                 {store.id}
               </TableCell> */}
-              <TableCell > <Link to={`/Listings/${store.id}`}>{store.business}</Link></TableCell>
-             
-              <TableCell>{store["description"]}</TableCell>
-              <TableCell>{store["address"]}</TableCell>
-              <TableCell>{store["open"]}</TableCell>
+              <TableCell > <Link to={`/Listings/${store.id}`}>{store.Player}</Link></TableCell>
+              <TableCell>{store["Rank"]}</TableCell>
               {checkAuth() ? (
               <TableCell>
                 <DeleteIcon

@@ -11,10 +11,8 @@ const BizDetails = (props) => {
     return (
         <div className='biz-container'>
             <div className="biz">
-				<h1>{biz.business}</h1>
-				<h3>{biz.address}</h3>
-				<h4>{biz.open}</h4>
-				<h3>{biz.description}</h3>
+				<h1>{biz.Player}</h1>
+				<h3>{biz.Rank}</h3>
 			</div>
 
             <Map />
